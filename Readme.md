@@ -1,7 +1,3 @@
-Certainly! Below is an example of a **README** file for a **Django eCommerce Backend** project. This README is designed to guide developers on how to set up, use, and understand the project.
-
----
-
 # Django eCommerce Backend
 
 This is the backend for an eCommerce application built with **Django** and **Django Rest Framework (DRF)**. It provides RESTful APIs for managing products, categories, user authentication, orders, and payments.
