@@ -10,3 +10,6 @@ class ProductView(APIView):
         product_obj = Product.objects.all()
         serializer = ProductSerializer(product_obj, many=True)
         return Response(serializer.data)
+
+    def post(self, request):
+        pass
