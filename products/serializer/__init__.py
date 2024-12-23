@@ -1,5 +1,6 @@
-from .products import ProductSerializer
+from .products import ProductSerializer, ProductAddSerializer
 
 __all__ = [
-    ProductSerializer
+    ProductSerializer,
+    ProductAddSerializer
 ]

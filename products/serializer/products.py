@@ -20,3 +20,15 @@ class ProductSerializer(serializers.ModelSerializer):
             'created_at',
             'updated_at',
         ]
+
+
+class ProductAddSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = [
+            'name',
+            'slug',
+            'description',
+            'is_active',
+            'price',
+        ]
