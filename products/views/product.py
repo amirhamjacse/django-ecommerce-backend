@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from products.models import Product
 from rest_framework.views import APIView
-from products.serializer import ProductSerializer
+from products.serializer import (
+    ProductSerializer, ProductAddSerializer
+)
 from rest_framework.response import Response
+from rest_framework import status
 
 
 class ProductView(APIView):
@@ -12,4 +15,9 @@ class ProductView(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        pass
+        # product_obj = Product.objects.all()
+        serializer = ProductAddSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(status.HTTP_200_OK)
+        return Response(status.HTTP_400_BAD_REQUEST)
