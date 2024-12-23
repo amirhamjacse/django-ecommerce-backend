@@ -6,4 +6,8 @@ urlpatterns = [
          views.ProductView.as_view(),
          name='product_list'
          ),
+    # path('add-product/',
+    #      views.ProductView.as_view(),
+    #      name='product_add'
+    #      ),
 ]
