@@ -21,3 +21,6 @@ class ProductView(APIView):
             serializer.save()
             return Response(status.HTTP_200_OK)
         return Response(status.HTTP_400_BAD_REQUEST)
+    
+    def patch(self, request):
+        pass
