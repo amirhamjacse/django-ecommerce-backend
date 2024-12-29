@@ -24,3 +24,7 @@ class ProductView(APIView):
     
     def patch(self, request):
         pass
+
+    
+    def delete(self, request):
+        pass
