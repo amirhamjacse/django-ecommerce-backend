@@ -48,5 +48,5 @@ urlpatterns = [
     path(
         'product/', include('products.urls'),
         name='prod'
-    )
+    ),
 ]
