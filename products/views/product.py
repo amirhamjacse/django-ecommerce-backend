@@ -27,7 +27,7 @@ class ProductView(APIView):
 
     def put(self, request):
         pass
-
     
     def delete(self, request):
         pass
+
